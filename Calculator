@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int num1,num2;
+   char op;
+   bool terminate=true;
+   
+   while(terminate==true)
+{
+   cout<<"enter any two number"<<endl;
+   cin>>num1>>num2;
+   cout<<"enter any operator"<<endl;
+   cin>>op;
+   
+   if(op=='+') 
+       cout<<num1+num2<<endl;
+    else if(op=='-')
+        cout<<num1-num2<<endl;
+    else if (op=='*')
+        cout<<num1*num2<<endl;
+    else if(op=='/')
+        cout<<num1/num2<<endl;
+    else if(op=='%')
+    
+    cout<<num1%num2<<endl;
+     else
+         cout<<"enter a correct operator"<<endl;
+     cout<<"do you want to continue? (Y/N)"<<endl;         
+     char choice;
+     cin>>choice;
+    
+     
+     if ((choice=='N')||(choice=='n'))
+     {
+         terminate=false;
+     }
+     }
+     return 0;
+}
